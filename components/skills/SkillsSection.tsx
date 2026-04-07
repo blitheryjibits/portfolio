@@ -1,0 +1,63 @@
+import { SkillCard } from "./SkillCard";
+
+export function SkillsSection() {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-12 gap-6" id="skills">
+      <div className="md:col-span-3 flex flex-col justify-end">
+        <h2 className="font-headline text-5xl font-black text-[#bc13fe] uppercase tracking-tighter leading-none mb-4 italic">
+          Technical
+          <br />
+          Skills & Expertise
+        </h2>
+
+        <div className="h-px bg-primary-container/30 w-full mb-8"></div>
+
+        <p className="text-secondary/40 font-mono text-xs uppercase tracking-widest">
+          Professional Stack & Theoretical Mastery
+        </p>
+      </div>
+
+      <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <SkillCard
+          title="REACT_ARCHITECTURE"
+          tag="PROFESSIONAL"
+          description="Component lifecycle optimization, complex state management systems, and high-performance UI patterns acquired through rigorous application development."
+          metricLabel="ALLOCATION"
+          metricValue={60}
+          borderColor="border-primary-container"
+          barColor="bg-primary-container"
+        />
+
+        <SkillCard
+          title="NEXT_INFRASTRUCTURE"
+          tag="V14_APP_ROUTER"
+          description="Implementation of Server Components, SSR/ISR optimization strategies, and scalable routing architectures for enterprise-grade web engines."
+          metricLabel="BANDWIDTH"
+          metricValue={92}
+          borderColor="border-secondary-container"
+          barColor="bg-secondary-container"
+        />
+
+        <SkillCard
+          title="NODE_BACKEND_CORE"
+          tag="RUNTIME_EXPERT"
+          description="Scalable microservices design, RESTful/GraphQL API orchestration, and asynchronous process management rooted in core CS fundamentals."
+          metricLabel="CACHE_USAGE"
+          metricValue={90}
+          borderColor="border-tertiary-container"
+          barColor="bg-tertiary-container"
+        />
+
+        <SkillCard
+          title="RELATIONAL_SYSTEMS"
+          tag="POSTGRES_SQL"
+          description="Complex schema design, query optimization, and ACID-compliant transaction management developed through advanced database theory coursework."
+          metricLabel="QUERY_RATE"
+          metricValue={88}
+          borderColor="border-primary"
+          barColor="bg-primary"
+        />
+      </div>
+    </section>
+  );
+}

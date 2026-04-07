@@ -1,65 +1,71 @@
-import Image from "next/image";
+import { Nav } from "@/components/ui/Nav";
+import { HeroSection } from "@/components/hero/HeroSection";
+import { SkillsSection } from "@/components/skills/SkillsSection";
+import { ProjectsSection } from "@/components/projects/ProjectsSection";
+import { JourneySection } from "@/components/journey/JourneySection";
+import { ContactSection } from "@/components/contact/ContactSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="relative font-body text-on-surface selection:bg-primary-container selection:text-white">
+      <div className="scanline-container">
+        <div className="scanline"></div>
+        <div className="scanline"></div>
+        <div className="scanline"></div>
+      </div>
+      {/* <!-- TopAppBar --> */}
+      <Nav />
+
+      <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto space-y-32">
+        {/* <!-- Section: Hero Terminal --> */}
+        <HeroSection />
+        {/* <!-- Section: System Specs (Skills) --> */}
+        <SkillsSection />
+        {/* <!-- Section: Construct Registry (Projects) --> */}
+        <ProjectsSection />
+        {/* <!-- Section: System Log (Academic & Professional Evolution) --> */}
+        <JourneySection />
+        {/* <!-- Section: Open Port (Contact) --> */}
+        <ContactSection />
       </main>
+      {/* <!-- Footer --> */}
+      <footer className="w-full py-4 px-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#14091f] border-t border-[#bc13fe]/20">
+        <div className="font-mono text-[10px] tracking-widest uppercase text-[#bc13fe] font-bold">
+          ROOT@ADRIAN_PORTFOLIO:~# _ SYSTEM_SECURED_2024
+        </div>
+        <div className="flex gap-6">
+          <a
+            className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
+            href="#"
+          >
+            RESOURCES
+          </a>
+          <a
+            className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
+            href="#"
+          >
+            GITHUB_REPOS
+          </a>
+          <a
+            className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
+            href="#"
+          >
+            LINKED_PORT
+          </a>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div>
+          <span className="text-[8px] font-mono text-primary/60">
+            SESSION_STABLE_CS_ENGINEER
+          </span>
+        </div>
+      </footer>
+      {/* <!-- Side Decoration: Vertical Text --> */}
+      <div className="fixed right-4 top-1/2 -translate-y-1/2 pointer-events-none hidden xl:block">
+        <div className="v-text font-mono text-[8px] tracking-[0.8em] text-secondary/20 uppercase">
+          ARCHITECTING_SCALABLE_SOLUTIONS_FULL_STACK_INTEGRITY_COMP_SCI_GRAD
+        </div>
+      </div>
     </div>
   );
 }
