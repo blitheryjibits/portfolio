@@ -22,7 +22,7 @@ export function ContactForm() {
         type="submit"
         className="bg-primary-container text-on-primary-container px-6 py-2 font-headline font-bold uppercase tracking-widest skew-x-[-10deg] hover:bg-primary-container/80 transition"
       >
-        Initiate Transfer
+        Initiate Contact
       </button>
     </form>
   );

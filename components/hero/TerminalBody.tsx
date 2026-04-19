@@ -11,20 +11,15 @@ export function TerminalBody() {
           <span className="text-secondary-container font-bold">
             [ENGINEER_IDENTITY]
           </span>{" "}
-          I am a Computer Science graduate from{" "}
-          <span className="text-primary">University of the People</span>,
-          dedicated to architecting scalable digital solutions. With a
-          deep-rooted passion for{" "}
-          <span className="text-primary">full-stack development</span>, I
-          specialize in engineering high-performance systems and optimizing
-          complex software architectures.
+          I’m a full‑stack JavaScript developer with a Computer Science degree
+          who works mainly with React, Next.js, Node.js, TypeScript, PostgreSQL,
+          and Prisma.
         </p>
 
         <p className="text-sm text-secondary/60">
-          My academic journey provided a rigorous foundation in computational
-          theory and software engineering principles. I leverage this expertise
-          to build robust, secure, and efficient web applications, transforming
-          abstract concepts into high-integrity codebases.
+          I build full‑stack apps that don’t fall apart under pressure. Clean
+          architecture, solid engineering, and just enough caffeine to keep
+          things interesting.
         </p>
 
         <div className="flex gap-4 pt-4">

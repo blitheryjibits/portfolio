@@ -16,7 +16,7 @@ export default function Home() {
       {/* <!-- TopAppBar --> */}
       <Nav />
 
-      <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto space-y-32">
+      <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto">
         {/* <!-- Section: Hero Terminal --> */}
         <HeroSection />
         {/* <!-- Section: System Specs (Skills) --> */}
@@ -31,7 +31,7 @@ export default function Home() {
       {/* <!-- Footer --> */}
       <footer className="w-full py-4 px-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#14091f] border-t border-[#bc13fe]/20">
         <div className="font-mono text-[10px] tracking-widest uppercase text-[#bc13fe] font-bold">
-          ROOT@ADRIAN_PORTFOLIO:~# _ SYSTEM_SECURED_2024
+          ROOT@ROBERT_PORTFOLIO:~# _Build_Version_2026
         </div>
         <div className="flex gap-6">
           <a
@@ -50,13 +50,13 @@ export default function Home() {
             className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
             href="#"
           >
-            LINKED_PORT
+            LINKEDIN_PORT
           </a>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div>
           <span className="text-[8px] font-mono text-primary/60">
-            SESSION_STABLE_CS_ENGINEER
+            system_status: ONLINE
           </span>
         </div>
       </footer>
