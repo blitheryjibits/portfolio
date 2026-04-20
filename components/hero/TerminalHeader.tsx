@@ -5,7 +5,7 @@ export function TerminalHeader() {
     <div className="bg-surface-container-high px-4 py-2 flex justify-between items-center border-b border-primary-container/20">
       <TerminalLights />
 
-      <div className="font-headline text-[10px] tracking-[0.2em] text-secondary/40 uppercase">
+      <div className="text-center font-headline text-[10px] tracking-[0.2em] text-secondary/40 uppercase">
         session: Developer Identification
       </div>
 
