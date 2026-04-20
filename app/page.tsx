@@ -16,7 +16,7 @@ export default function Home() {
       {/* <!-- TopAppBar --> */}
       <Nav />
 
-      <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+      <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto space-y-32">
         {/* <!-- Section: Hero Terminal --> */}
         <HeroSection />
         {/* <!-- Section: System Specs (Skills) --> */}
