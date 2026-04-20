@@ -2,22 +2,20 @@ import { SkillCard } from "./SkillCard";
 
 export function SkillsSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-12 gap-6" id="skills">
-      <div className="md:col-span-3 flex flex-col justify-end">
-        <h2 className="font-headline text-5xl font-black text-[#bc13fe] uppercase tracking-tighter leading-none mb-4 italic">
-          Technical
-          <br />
-          Skills & Expertise
+    <section className="gap-6" id="skills">
+      <div className="flex flex-col lg:flex-row mb-8">
+        <h2 className="font-headline text-5xl text-pretty lg:text-end font-black text-[#bc13fe] uppercase tracking-tighter leading-none italic">
+          Technical Skills <br />& Expertise
         </h2>
 
-        <div className="h-px bg-primary-container/30 w-full mb-8"></div>
+        <div className="w-full mb-4 lg:mb-0 lg:flex-1 mt-auto h-px bg-primary-container/30"></div>
 
-        <p className="text-secondary/40 font-mono text-xs uppercase tracking-widest">
+        <p className="text-secondary/40 font-mono text-xs uppercase tracking-widest mt-auto">
           Professional Stack & Theoretical Mastery
         </p>
       </div>
 
-      <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="flex flex-col md:flex-row flex-wrap gap-4">
         <SkillCard
           title="REACT_ARCHITECTURE"
           tag="PROFESSIONAL"
