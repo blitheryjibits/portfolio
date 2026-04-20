@@ -54,19 +54,13 @@
   --color-error: #ffb4ab;
   --color-outline-variant: #504254;
   --color-primary-fixed: #f8d8ff;
-
-  --radius-none: 0px;
-  --radius-default: 0px;
-  --radius-lg: 0px;
-  --radius-xl: 0px;
-  --radius-full: 9999px;
 }
 
 nav {
   scroll-target-group: auto;
 }
 
-.nav-list a:target-current {
+nav a:target-current {
   color: #bc13fe;
   border-bottom: 2px solid #bc13fe;
   font: bold;
