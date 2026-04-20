@@ -22,7 +22,7 @@ export function TerminalBody() {
           things interesting.
         </p>
 
-        <div className="flex gap-4 pt-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <TerminalTag label="DEGREE_CONFIRMED: BS_CS" variant="primary" />
           <TerminalTag label="STATUS: FULL_STACK_DEV" variant="secondary" />
         </div>
