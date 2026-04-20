@@ -3,14 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 export function ProjectsSection() {
   return (
     <section className="space-y-12" id="projects">
-      <div className="flex items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-center gap-6">
         <h2 className="font-headline text-5xl font-black text-secondary-container uppercase tracking-tighter">
           Featured Projects
         </h2>
 
-        <div className="h-0.5 bg-secondary-container/20 grow"></div>
-
-        <div className="text-xs font-mono text-secondary/40 whitespace-nowrap uppercase tracking-[0.3em]">
+        <div className="flex flex-1 justify-end text-xs font-mono text-secondary/40 whitespace-nowrap uppercase tracking-[0.3em]">
           Analyzing Repository Metrics...
         </div>
       </div>
