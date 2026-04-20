@@ -8,7 +8,8 @@ export function Nav() {
         DEV.IO
       </div>
 
-      <nav className="hidden md:flex gap-8 items-center nav-list">
+      <nav className="hidden md:flex gap-8 items-center">
+        <NavLink href="#hero" label="Hero" />
         <NavLink href="#skills" label="Skills" />
         <NavLink href="#projects" label="Projects" />
         <NavLink href="#journey" label="Evolution" />
