@@ -56,6 +56,7 @@
   --color-primary-fixed: #f8d8ff;
 }
 
+/* navigation highlight and scroll styles */
 nav {
   scroll-target-group: auto;
 }
@@ -69,6 +70,8 @@ nav a:target-current {
 section {
   scroll-margin-top: 6rem;
 }
+
+/* end navigation styles */
 
 @theme inline {
   --color-background: var(--background);
