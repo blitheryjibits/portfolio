@@ -61,7 +61,7 @@ nav {
   scroll-target-group: auto;
 }
 
-nav a:target-current {
+nav a\:target-current {
   color: #bc13fe;
   border-bottom: 2px solid #bc13fe;
   font: bold;
