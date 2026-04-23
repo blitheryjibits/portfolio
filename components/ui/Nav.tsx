@@ -1,5 +1,5 @@
 import { NavLink } from "./NavLink";
-import { Icon } from "./Icon";
+import { TextAlignJustify, X } from "lucide-react";
 
 export function Nav() {
   return (
@@ -8,24 +8,50 @@ export function Nav() {
         DEV.IO
       </div>
 
-      <nav className="hidden md:flex gap-8 items-center">
-        <NavLink href="#hero" label="Hero" />
-        <NavLink href="#skills" label="Skills" />
-        <NavLink href="#projects" label="Projects" />
-        <NavLink href="#journey" label="Evolution" />
-        <NavLink href="#contact" label="Contact" />
-      </nav>
+      <nav className="relative">
+        <div className="h-100% bg-transparent flex-1">
+          <input
+            title="sidebar-active"
+            type="checkbox"
+            name="sidebar-active"
+            id="sidebar-active"
+            className="hidden peer"
+          />
+          <label
+            id=""
+            htmlFor="sidebar-active"
+            className="md:hidden peer-checked:hidden
+          absolute right-2 top-[50%] -translate-y-[50%]"
+          >
+            <TextAlignJustify />
+          </label>
 
-      <div className="flex items-center gap-4 text-[#bc13fe]">
-        <Icon
-          name="settings_input_component"
-          className="cursor-pointer hover:bg-[#bc13fe]/10 p-1"
-        />
-        <Icon
-          name="terminal"
-          className="cursor-pointer hover:bg-[#bc13fe]/10 p-1"
-        />
-      </div>
+          {/* menu list */}
+          <ul
+            className={`absolute top-0 translate-x-full w-1/2 md:w-full h-fit
+              flex flex-col gap-4
+              bg-background/60 backdrop-blur-xs 
+              peer-checked:translate-x-0
+              transtition-all duration-300
+              md:max-w-fit md:flex md:flex-row md:translate-x-0 md:h-full
+              md:gap-0 md:pt-0 md:pr-4 md:text-sm md:bg-transparent md:backdrop-blur-none
+              
+              `}
+          >
+            <li className="ml-auto mr-4 mt-4 md:hidden">
+              <label htmlFor="sidebar-active">
+                <X />
+              </label>
+            </li>
+
+            <NavLink href="#hero" label="Hero" />
+            <NavLink href="#skills" label="Skills" />
+            <NavLink href="#projects" label="Projects" />
+            <NavLink href="#journey" label="Evolution" />
+            <NavLink href="#contact" label="Contact" />
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 }

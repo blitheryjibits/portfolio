@@ -52,7 +52,7 @@ export function TimelineEntry({
 
       {/* ICON */}
       <div
-        className={`relative z-10 flex items-center justify-center w-15 h-15 bg-surface-container border-2 ${borderColor} my-4 md:my-0`}
+        className={`relative text-center z-10 flex items-center justify-center px-3 py-2 bg-surface-container border-2 ${borderColor} my-4 md:my-0`}
       >
         <Icon name={iconName} className={borderColor} />
       </div>

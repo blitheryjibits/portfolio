@@ -1,6 +1,5 @@
 import { ProjectBadge } from "./ProjectBadge";
 import { ProjectTech } from "./ProjectTech";
-import { Icon } from "../ui/Icon";
 import Image from "next/image";
 
 export function ProjectCard({
@@ -11,8 +10,6 @@ export function ProjectCard({
   badgeColor,
   borderColor,
   image,
-  iconName,
-  iconColor,
 }: {
   title: string;
   description: string;
@@ -21,19 +18,17 @@ export function ProjectCard({
   badgeColor: string;
   borderColor: string;
   image: string;
-  iconName: string;
-  iconColor: string;
 }) {
   return (
     <div
-      className={`group relative bg-surface-container-low border border-outline-variant/30 hover:${borderColor}/60 transition-all`}
+      className={`group relative pb-8 bg-surface-container-low border border-outline-variant/30 hover:${borderColor}/60 transition-all`}
     >
       <div className="aspect-video overflow-hidden bg-surface-container-highest relative">
         <Image
           fill
           alt={title}
           src={image}
-          className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+          className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
         />
 
         <div className="absolute inset-0 bg-linear-to-t from-surface-container-lowest to-transparent"></div>
@@ -54,11 +49,9 @@ export function ProjectCard({
           {description}
         </p>
 
-        <ProjectTech items={tech} />
-      </div>
-
-      <div className="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-        <Icon name={iconName} className={`${iconColor} text-4xl`} />
+        <div className="absolute bottom-4 left-6">
+          <ProjectTech items={tech} />
+        </div>
       </div>
     </div>
   );

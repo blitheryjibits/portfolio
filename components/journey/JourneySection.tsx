@@ -15,30 +15,30 @@ export function JourneySection() {
 
       <div className="space-y-24 relative">
         <TimelineEntry
-          phase="PHASE 03: Full-Stack Specialization"
+          phase="Full-Stack Javascript Development"
           title="Software Engineer // Architect"
-          description="Advanced system design, cloud orchestration, and large-scale application development. Specialized in creating reactive, high-integrity digital ecosystems."
-          logLevel="LOG_LEVEL: CRITICAL_PATH_DEPLOYMENT"
-          iconName="developer_mode"
+          description="Active development of real‑time capabilities using Node.js, TypeScript, and WebSockets. Expanding backend proficiency through PostgreSQL schema design, query optimization, and foundational distributed‑system patterns. Current focus: building reliable, event‑driven features and strengthening architectural decision‑making for modern web applications."
+          logLevel="LOG_LEVEL: SYSTEM_DEPLOYMENT"
+          iconName="DEVELOPER_MODE"
           borderColor="border-primary-container"
         />
 
         <TimelineEntry
-          phase="PHASE 02: Advanced Algorithms"
-          title="Structural Computing Engineer"
-          description="In-depth study of complex data structures and algorithmic efficiency. Optimized computational logic for high-performance processing environments."
-          logLevel="LOG_LEVEL: SYSTEM_EXPANSION_OPTIMIZATION"
-          iconName="account_tree"
+          phase="Modern Web Development"
+          title="Javascript, React, and Next.js Development"
+          description="Specialization in the modern web stack: JavaScript, React, Next.js, component‑driven UI architecture, and clean design principles. Emphasis on building responsive interfaces, reusable components, and intuitive user flows. This phase established the core toolkit for front‑end engineering in real projects."
+          logLevel="LOG_LEVEL: FRONTEND_INTEGRATION"
+          iconName="OPERATING SYSTEM"
           borderColor="border-secondary-container"
           reverse
         />
 
         <TimelineEntry
-          phase="PHASE 01: Core CS Fundamentals"
+          phase="Core CS Fundamentals"
           title="B.S. Computer Science @ UoPeople"
-          description="Rigorous theoretical foundation in computation, operating systems, and discrete mathematics. Establishing the root logic for professional engineering."
+          description="Rigorous theoretical foundation in computation, operating systems, algorithms, and discrete mathematics. Establishing the root logic for professional engineering."
           logLevel="LOG_LEVEL: ROOT_INITIALIZATION"
-          iconName="memory"
+          iconName="BIOS"
           borderColor="border-tertiary-container"
         />
       </div>

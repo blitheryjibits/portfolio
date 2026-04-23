@@ -14,8 +14,10 @@ export function NavLink({
     "text-[#dcfdff]/60 font-medium hover:text-[#bc13fe]/80 hover:bg-[#41344c]/40 hover:skew-x-[-2deg]";
 
   return (
-    <a href={href} className={`${base} ${active ? "" : inactiveStyles}`}>
-      {label}
-    </a>
+    <li>
+      <a href={href} className={`${base} ${active ? "" : inactiveStyles}`}>
+        {label}
+      </a>
+    </li>
   );
 }

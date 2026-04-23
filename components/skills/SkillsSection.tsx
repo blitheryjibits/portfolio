@@ -21,7 +21,7 @@ export function SkillsSection() {
           tag="PROFESSIONAL"
           description="Component lifecycle optimization, complex state management systems, and high-performance UI patterns acquired through rigorous application development."
           metricLabel="ALLOCATION"
-          metricValue={60}
+          metricValue={90}
           borderColor="border-primary-container"
           barColor="bg-primary-container"
         />
@@ -31,7 +31,7 @@ export function SkillsSection() {
           tag="V14_APP_ROUTER"
           description="Implementation of Server Components, SSR/ISR optimization strategies, and scalable routing architectures for enterprise-grade web engines."
           metricLabel="BANDWIDTH"
-          metricValue={92}
+          metricValue={80}
           borderColor="border-secondary-container"
           barColor="bg-secondary-container"
         />
@@ -41,7 +41,7 @@ export function SkillsSection() {
           tag="RUNTIME_EXPERT"
           description="Scalable microservices design, RESTful/GraphQL API orchestration, and asynchronous process management rooted in core CS fundamentals."
           metricLabel="CACHE_USAGE"
-          metricValue={90}
+          metricValue={95}
           borderColor="border-tertiary-container"
           barColor="bg-tertiary-container"
         />
@@ -51,7 +51,7 @@ export function SkillsSection() {
           tag="POSTGRES_SQL"
           description="Complex schema design, query optimization, and ACID-compliant transaction management developed through advanced database theory coursework."
           metricLabel="QUERY_RATE"
-          metricValue={88}
+          metricValue={85}
           borderColor="border-primary"
           barColor="bg-primary"
         />
