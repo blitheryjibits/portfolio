@@ -8,7 +8,7 @@ export function Nav() {
         DEV.IO
       </div>
 
-      <nav className="relative">
+      <nav className="relative w-full">
         <div className="h-100% bg-transparent flex-1">
           <input
             title="sidebar-active"
@@ -28,12 +28,12 @@ export function Nav() {
 
           {/* menu list */}
           <ul
-            className={`absolute top-0 translate-x-full w-1/2 md:w-full h-fit
+            className={`absolute top-0 -right-full w-1/2 md:w-full h-fit
               flex flex-col gap-4
               bg-background/60 backdrop-blur-xs 
-              peer-checked:translate-x-0
+              peer-checked:right-0
               transtition-all duration-300
-              md:max-w-fit md:flex md:flex-row md:translate-x-0 md:h-full
+              md:max-w-fit md:flex md:flex-row md:right-0 md:h-full
               md:gap-0 md:pt-0 md:pr-4 md:text-sm md:bg-transparent md:backdrop-blur-none
               
               `}
