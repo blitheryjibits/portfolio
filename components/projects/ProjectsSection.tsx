@@ -42,7 +42,7 @@ through clean layouts, spacious typography, and a nature-driven visual identity.
           badge="Visual_Design"
           badgeColor="bg-tertiary-container text-on-primary-container"
           borderColor="border-tertiary-container"
-          image="/project-images/MM-dashboard-bottom.png"
+          image="/project-images/pod-landing.png"
         />
       </div>
     </section>
