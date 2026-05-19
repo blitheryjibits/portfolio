@@ -42,13 +42,15 @@ export default function Home() {
           </a>
           <a
             className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
-            href="#"
+            href="https://github.com/blitheryjibits"
+            target="none"
           >
             GITHUB_REPOS
           </a>
           <a
             className="font-mono text-[10px] tracking-widest uppercase text-[#dcfdff]/40 hover:text-[#00f3ff] hover:bg-[#bc13fe]/10 px-2 py-1"
-            href="#"
+            href="https://www.linkedin.com/in/robert-thornton-in-pixels"
+            target="none"
           >
             LINKEDIN_PORT
           </a>
