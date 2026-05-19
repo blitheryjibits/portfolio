@@ -5,17 +5,13 @@ export function ContactForm() {
   return (
     <form className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <FormField label="Identifier / Name" placeholder="NAME_INPUT" />
-        <FormField
-          label="Uplink / Email"
-          placeholder="EMAIL_INPUT"
-          type="email"
-        />
+        <FormField label="Name" placeholder="Linus Torvalds" />
+        <FormField label="Email" placeholder="Ltor@linux.com" type="email" />
       </div>
 
       <TextAreaField
-        label="Transmission / Message"
-        placeholder="MESSAGE_PAYLOAD"
+        label="Message"
+        placeholder="Hello Robert, I am interested in collaborating on a project with you. Please let me know how we can connect!"
       />
 
       <button
