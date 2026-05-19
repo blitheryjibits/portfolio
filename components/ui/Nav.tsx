@@ -4,7 +4,7 @@ import { TextAlignJustify, X } from "lucide-react";
 export function Nav() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 bg-[#14091f]/80 backdrop-blur-md border-b border-[#bc13fe]/20">
-      <div className="text-xl font-black tracking-widest text-[#bc13fe] drop-shadow-[0_0_8px_rgba(188,19,254,0.6)] font-headline uppercase">
+      <div className="cursor-default text-xl font-black tracking-widest text-[#bc13fe] drop-shadow-[0_0_8px_rgba(188,19,254,0.6)] font-headline uppercase">
         DEV.IO
       </div>
 
