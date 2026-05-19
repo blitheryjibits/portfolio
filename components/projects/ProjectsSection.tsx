@@ -26,8 +26,8 @@ export function ProjectsSection() {
 
         <ProjectCard
           title="MyCloud"
-          description="Light-weight, server-side rendered cloud storage platform with granular User Based Access Control"
-          tech={["Node.js", "PostgreSQL", "Prisma", "Passport.js"]}
+          description="Light-weight, server-side rendered cloud storage platform with granular User Based Access Control."
+          tech={["Node.js", "EJS", "PostgreSQL", "Prisma", "Passport.js"]}
           badge="V1.1_RELEASE"
           badgeColor="bg-secondary-container text-on-secondary-container"
           borderColor="border-secondary-container"
@@ -37,8 +37,8 @@ export function ProjectsSection() {
         <ProjectCard
           title="POD Gardens"
           description="Modern landscape-architecture brand brought to life 
-through clean layouts, spacious typography, and a nature-driven visual identity."
-          tech={["Next.js", "TailwindCSS", "Typescript"]}
+through clean layouts, spacious typography, and a nature-driven visual identity. Includes a custom booking system built with Shadcn and PostgreSQL for seamless client interactions."
+          tech={["Next.js", "TailwindCSS", "Typescript", "PostgreSQL"]}
           badge="Visual_Design"
           badgeColor="bg-tertiary-container text-on-primary-container"
           borderColor="border-tertiary-container"
